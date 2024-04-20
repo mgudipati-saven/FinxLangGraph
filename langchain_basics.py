@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from setup_environment import set_environment_variables
 
-set_environment_variables()
+set_environment_variables("Simple LangChain Test")
 
 french_german_prompt = ChatPromptTemplate.from_template(
   "Please tell me the french and german words for {word} with an example sentence for each."
